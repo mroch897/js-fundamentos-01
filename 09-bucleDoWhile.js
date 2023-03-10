@@ -24,9 +24,7 @@ console.log(`La variable j vale: ${j}`);
 
 console.log("--------------")
 
-var timesRepeated=0;
-var sentence= 'La programación me gusta';
-var i=0;
+
 
 
 var timesRepeated = 0;
