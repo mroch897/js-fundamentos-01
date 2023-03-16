@@ -178,8 +178,88 @@ function bmi(weight, height) {
     
     console.log(noSpace(' Hol a'));
 
+
+
 function pruebaRepl(prove){
     return prove.replace("", "");
 }
 
 console.log(pruebaRepl("cos",""));
+
+
+// FUNCIÖN QUE DEVUELVE UN NÚMERO A STRING
+console.log("-----------NumberToString---------")
+
+function numberToString(number){
+    var string= number.toString();
+
+    return string;
+}
+
+console.log(numberToString(4))
+
+
+// FUNCIÖN QUE DEVUELVE UN STRING A NUMBER
+console.log("-----------STRING A NUMBER---------");
+
+function stringToNumber(string){
+    return parseInt(string);
+}
+
+console.log(stringToNumber("puta"));
+
+
+
+// FUNCIÓN QUE DEVUELVA EVEN SI ES PAR, I SI NO ODD
+
+console.log("-----------Even or odd---------");
+
+function evenOrOdd(number){
+    
+    if(number %2==0){
+        return "Even";
+    }else{
+        return "odd";
+    }
+    
+}
+
+
+console.log(evenOrOdd(3));
+
+
+// Función para quitar la primera y última posición de un string.
+
+//cadena.slice(inicioTrozo[, finTrozo])
+function deletePosition(string){
+    return string.slice(1,3);
+}
+
+console.log(deletePosition("HholaA"));
+
+
+
+
+
+// Función que accepta tanto strings como numbers y devuelve tantas veces como los pongas. EJ:6, "I"     -> "IIIIII"
+
+function repeatStr (n, s) {
+    var repeat= "";
+
+    for(var i=0; i<n;i++){
+        repeat+=s;
+
+    }
+
+    return repeat;
+  }
+
+  console.log(repeatStr(3, " hola"));
+
+
+
+  function minNumber(arr){
+   return Math.min(...arr);
+  }
+
+  console.log(minNumber([2,3,1,4]));
